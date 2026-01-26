@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Geometry Calculator</title>
+</head>
+<body>
+    <h1>Rectangle Geometry Calculator</h1>
+    <p>Room Measurement Estimator</p>
+    <h2>Contractor Estimator</h2>
+    <div class="input-group">
+        <label for="length">Room Length (m):</label>
+        <input type="number" id="length" placeholder="10m">
+    </div>
+    <div class="input-group">
+        <label for="width">Room Width (m):</label>
+        <input type="number" id="width" placeholder="9m">
+    </div>
+    <button onclick="calculateEstimates()">Calculate Estimates</button>
+
+    <div id="results" style="display:none;">
+        <h3>Calculations:</h3>
+        <p id="outArea"></p>
+        <p id="outPerim"></p>
+        <br>
+        <p id="outFlooring"></p>
+        <p id="outSkirting"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
